@@ -37,7 +37,7 @@ export interface IAddressForm {
   zip?: string;
 }
 export interface IAddressGroup {
-  addresses: Array<string>;
+  addresses: string[];
   id: string;
   name: string;
 }
@@ -48,13 +48,13 @@ export interface IBrowserGroup {
 export interface IBrowserGroupForm {
   browserGroupName?: string;
   id?: string;
-  browsers?: Array<string>;
+  browsers?: string[];
 }
 export interface IBrowser {
   browserGroupId?: string;
   browserProfile?: string;
   browserURL: string;
-  cookies?: Array<any>;
+  cookies?: any[];
   id: string;
   isAdidas?: boolean;
   isYeezySupply?: boolean;
@@ -70,7 +70,7 @@ export interface IBrowserForm {
   browserProfile?: string;
   browserGroupId?: string;
   browserURL?: string;
-  cookies?: Array<any>;
+  cookies?: any[];
   id?: string;
   isAdidas?: boolean;
   isYeezySupply?: boolean;
@@ -102,7 +102,7 @@ export interface ICreditCardForm {
   nameOnCard?: string;
 }
 export interface ICreditCardGroup {
-  creditCards: Array<string>;
+  creditCards: string[];
   id: string;
   name: string;
 }
@@ -145,7 +145,7 @@ export interface IProxy {
 export interface IProxyGroup {
   id?: string;
   proxyGroupName: string;
-  proxies: Array<string>;
+  proxies: string[];
 }
 export interface IProxyGroupForm {
   id?: string;
@@ -163,34 +163,34 @@ export interface ISite {
 }
 export interface IUpdateProxiesGroup {
   proxyGroupId: string;
-  proxies: Array<string>;
+  proxies: string[];
   name?: string;
 }
 export interface IState {
-  accounts: Array<IAccount>;
+  accounts: IAccount[];
   accountForm: IAccountForm;
-  addresses: Array<IAddress>;
+  addresses: IAddress[];
   addressForm: IAddressForm;
-  addressGroups: Array<IAddressGroup>;
+  addressGroups: IAddressGroup[];
   browserForm: IBrowserForm;
-  browserGroups: Array<IBrowserGroup>;
+  browserGroups: IBrowserGroup[];
   browserGroupForm: IBrowserGroupForm;
-  browserProfiles: Array<string>;
-  browsers: Array<IBrowser>;
+  browserProfiles: string[];
+  browsers: IBrowser[];
   creditCardForm: ICreditCardForm;
-  creditCardGroups: Array<ICreditCardGroup>;
-  creditCards: Array<ICreditCard>;
+  creditCardGroups: ICreditCardGroup[];
+  creditCards: ICreditCard[];
   navigation: INavigation;
   profileForm: IProfileForm;
-  proxies: Array<IProxy>;
+  proxies: IProxy[];
   proxiesForm: IProxiesForm;
   proxyGroupForm: IProxyGroupForm;
-  proxyGroups: Array<IProxyGroup>;
-  profiles: Array<IProfile>;
-  sites: Array<ISite>;
-  tasks: Array<ITask>;
+  proxyGroups: IProxyGroup[];
+  profiles: IProfile[];
+  sites: ISite[];
+  tasks: ITask[];
   taskForm: ITaskForm;
-  taskTypes: Array<ITaskType>;
+  taskTypes: ITaskType[];
 }
 export interface ITask {
   addressId?: string;
@@ -225,7 +225,7 @@ export interface ITaskForm {
 export interface ITaskGroup {
   id: string;
   name: string;
-  tasks: Array<string>;
+  tasks: string[];
 }
 export interface ITaskType {
   id: string;
